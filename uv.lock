@@ -15,25 +15,6 @@ wheels = [
 ]
 
 [[package]]
-name = "jax-oslo"
-version = "0.1.0"
-source = { editable = "." }
-dependencies = [
-    { name = "beartype" },
-    { name = "jaxtyping" },
-    { name = "numba" },
-    { name = "ruff" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "beartype", specifier = ">=0.19.0" },
-    { name = "jaxtyping", specifier = ">=0.2.34" },
-    { name = "numba", specifier = ">=0.60.0" },
-    { name = "ruff", specifier = ">=0.7.2" },
-]
-
-[[package]]
 name = "jaxtyping"
 version = "0.2.34"
 source = { registry = "https://pypi.org/simple" }
@@ -73,6 +54,25 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/67/88/c4459ccc05674ef02119abf2888ccd3e2fed12a323f52255f4982fc95876/numba-0.60.0-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hash = "sha256:62908d29fb6a3229c242e981ca27e32a6e606cc253fc9e8faeb0e48760de241e", size = 3466946 },
     { url = "https://files.pythonhosted.org/packages/8b/41/ac11cf33524def12aa5bd698226ae196a1185831c05ed29dc0c56eaa308b/numba-0.60.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hash = "sha256:0ebaa91538e996f708f1ab30ef4d3ddc344b64b5227b67a57aa74f401bb68b9d", size = 3761463 },
     { url = "https://files.pythonhosted.org/packages/ca/bd/0fe29fcd1b6a8de479a4ed25c6e56470e467e3611c079d55869ceef2b6d1/numba-0.60.0-cp312-cp312-win_amd64.whl", hash = "sha256:f75262e8fe7fa96db1dca93d53a194a38c46da28b112b8a4aca168f0df860347", size = 2707588 },
+]
+
+[[package]]
+name = "numba-oslo"
+version = "0.1.0"
+source = { editable = "." }
+dependencies = [
+    { name = "beartype" },
+    { name = "jaxtyping" },
+    { name = "numba" },
+    { name = "ruff" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "beartype", specifier = ">=0.19.0" },
+    { name = "jaxtyping", specifier = ">=0.2.34" },
+    { name = "numba", specifier = ">=0.60.0" },
+    { name = "ruff", specifier = ">=0.7.2" },
 ]
 
 [[package]]

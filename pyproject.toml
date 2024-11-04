@@ -1,0 +1,27 @@
+[project]
+name = "jax-oslo"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+    { name = "theorashid", email = "theoaorashid@gmail.com" }
+]
+dynamic = ["version", "description"]
+requires-python = ">=3.12"
+dependencies = [
+    "beartype>=0.19.0",
+    "jax>=0.4.35",
+    "jaxtyping>=0.2.34",
+    "ruff>=0.7.2",
+]
+
+[project.scripts]
+jax-oslo = "jax_oslo:main"
+
+[build-system]
+requires = ["flit_core>=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.ruff]
+extend-include = ["*.ipynb"]
+exclude = []
+lint.ignore = ["F722", "F821"]

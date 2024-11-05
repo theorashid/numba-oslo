@@ -3,9 +3,9 @@
 Oslo model implemented in numba.
 
 This is based on the Complexity and Networks course at Imperial College London (probably my favourite).
-It was one of my first coding projects and wrote the model with a while loop.
+It was one of my first coding projects and I wrote the model with a while loop.
 I set my notebook running overnight and hoped for the best.
-Going to see if `numba` works better.
+Going to see if [`numba`](https://numba.pydata.org/) works better.
 
 ## the Oslo Model
 
@@ -41,9 +41,11 @@ In words, a rice grain falls from site $i$ to site $i+1$, so the local slope inc
 The final site, $L$, is open and grains that fall off the end are lost.
 
 The time to reach steady state is equal to number of grains added before a grain leaves the system for the first time, or
+
 $$
 t_c(L) = \sum_{i=1}^{L} z_i \cdot i.
 $$
+
 After this critical point, the ricepile passes through a set of recurrent configurations.
 
 The avalanche size, $s$, is the total number of relaxations upon driving.
